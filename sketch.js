@@ -2,13 +2,13 @@ var database;
 var back_img;
 var gameState =0;
 var playerCount = 0;
-var allPlayers;
+var allPlayers=[];
 var form;
 var player, form,game;
 var player1,player2;
 var players;
 var fruits;
-var fruitGroup;
+var fruitGroup=[];
 var fruit1_img, fruit2_img, fruit3_img, fruit4_img, fruit5_img;
 var player_img;
 var game;
@@ -48,5 +48,4 @@ function draw() {
     
      game.end();
    }
-   text(allPlayers[plr].name,x-25,y+25);  
 }

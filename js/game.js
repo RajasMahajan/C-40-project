@@ -109,9 +109,11 @@ class Game{
                     }
                   }
                 
-
+console.log("fr");
          
          
+    // text(allPlayers[plr].name,x-25,y+25);  
+    
         
          
 
