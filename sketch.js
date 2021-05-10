@@ -8,7 +8,7 @@ var player, form,game;
 var player1,player2;
 var players;
 var fruits;
-var fruitGroup=[];
+var fruitGroup;
 var fruit1_img, fruit2_img, fruit3_img, fruit4_img, fruit5_img;
 var player_img;
 var game;
@@ -26,6 +26,7 @@ function preload(){
 function setup() {
   createCanvas(1000, 600);
   database = firebase.database();
+  fruitGroup=createGroup();
   // form= new Form();
   game = new Game();
   

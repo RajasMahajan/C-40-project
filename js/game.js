@@ -58,9 +58,11 @@ class Game{
                      if(index === player.index){
                          
                        //add code to display the player's name on the respective basket.
-
-                         
-                     }
+                        textSize(50);
+                        fill("red");
+                         console.log(allPlayers[plr].name)
+                     text(allPlayers[plr].name,x-25,y-80);  
+                     } 
                     
                       
                  
@@ -70,10 +72,12 @@ class Game{
                  
 
                 if (keyIsDown(RIGHT_ARROW) && player.index !== null) {
+                    // console.log("leftarrowpressed");
                     player.distance -= 10
                     player.update();
                 }
                 if (keyIsDown(LEFT_ARROW) && player.index !== null) {
+                    // console.log("rightarrow");
                     player.distance += 10
                     player.update();
                 }
@@ -109,10 +113,9 @@ class Game{
                     }
                   }
                 
-console.log("fr");
+// console.log("fr");
          
          
-    // text(allPlayers[plr].name,x-25,y+25);  
     
         
          
